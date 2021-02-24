@@ -29,6 +29,8 @@
   src: url(../asset/font/Qalistha.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 /* mongolian baiti kw */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&family=Playfair+Display&display=swap');
 /* invited */
@@ -172,7 +174,7 @@ img{
   justify-content: center;
   align-items: center;
   text-align: center;
-  bottom: 5em;
+  bottom: 8em;
   position: absolute;
 }
 
@@ -465,6 +467,11 @@ img{
 
 .akad-resepsi .resepsi img{
   width: 60%;
+}
+
+.akad-resepsi .akad p,
+.akad-resepsi .resepsi p{
+  font-family: 'Oswald', sans-serif;
 }
 
 .sorry-protokol{
@@ -1148,7 +1155,7 @@ img{
     width: 100vw;
     text-align: center;  
     position: absolute;
-    bottom: 3em;
+    bottom: 7em;
   }
 
   .title a{
