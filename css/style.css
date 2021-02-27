@@ -288,8 +288,8 @@ img{
 
 .space{
   padding-top: 10px;
-  -moz-text-stroke: .2px #000;
-  -webkit-text-stroke: .2px #000;
+  /* -moz-text-stroke: .2px #000;
+  -webkit-text-stroke: .2px #000; */
 }
 
 .playfair{
@@ -321,8 +321,8 @@ img{
   font-family: 'bromello' !important;
   font-size: 200px !important;
   /* font-weight: bolder; */
-  -moz-text-stroke: .5px #000;
-  -webkit-text-stroke: .5px #000;
+  /* -moz-text-stroke: .5px #000;
+  -webkit-text-stroke: .5px #000; */
 }
 
 .bold{
@@ -469,9 +469,13 @@ img{
   width: 60%;
 }
 
-.akad-resepsi .akad p,
-.akad-resepsi .resepsi p{
+.save-the-date .realtive .block .akad-resepsi .akad p{
   font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+.save-the-date .relative .block .akad-resepsi .resepsi p{
+  font-family: 'Oswald', sans-serif;
+  color: #000;
 }
 
 .sorry-protokol{
@@ -1253,7 +1257,7 @@ img{
   .date .save-date p{
     font-size: 32px !important;
   }
-
+/* 
   .waktu .resepsi span,
   .waktu .akad span{
     font-size: 13px;
@@ -1262,7 +1266,7 @@ img{
   .waktu .resepsi p,
   .waktu .akad p{
     font-size: 10px !important;
-  }
+  } */
 
   .waktu .sabtu p{
     font-size: 20px !important;
