@@ -1,4 +1,9 @@
 /* nama */
+@font-face{
+  font-family: 'orator';
+  src: url(../asset/font/OratorStd.otf);
+}
+
 @font-face {
   font-family: 'amalfi';
   src: url(../asset/font/Amalfi\ Coast.ttf);
@@ -101,7 +106,7 @@ body{
   visibility: hidden;
   opacity: 1;
   transition: 1s;
-  z-index: 1;
+  z-index: 10 !important;
 }
 
 #popup.active{
@@ -185,16 +190,26 @@ img{
   color: white;
 }
 
-.isra-count{
+.arrum-section{
   width: 100vw;
-  height: 150vh;
-  background: url("../asset/image/isii.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;  
+  height: max-content;
 }
 
-.content-isra{
+.relative-arrum{
+  position: relative;
+}
+
+.arrum-section .relative-arrum img{
+  width: 100vw;
+  z-index: 0;
+}
+
+.block-arrum{
+  position: absolute;
+  top: 0;
+}
+
+.content-isra{ 
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -203,11 +218,11 @@ img{
   align-items: center;
   text-align: center;
   padding: 30px 0 30px 0;
-  /* background: url("../asset/image/arrum */
 }
 
 .content-isra img{
-  width: 130px;
+  width: 70px !important;
+  position: relative!important;
 }
 
 .content-isra p{
@@ -223,35 +238,46 @@ img{
   line-height: 25px;
 }
 
+.relative-arrum .background{
+  margin-top: -50px;
+  /* position: relative; */
+  z-index: 0  ;
+}
+
+.arrum-section .relative-arrum  .block-arrum img{
+  z-index: 1!important;
+  position: absolute;
+}
+
+
+
 .bride-groom{
-    width: 100vw;
-    height: max-content;
-    /* background: url("../asset/image/isi.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;   */
-    /* background-color: blue; */
-    /* padding-top: -20px; */
+  width: 100vw;
+  height: max-content;
+  /* margin-top: -100px; */
+  /* z-index: 1; */
 }
 
-.bride-groom .foto img{
-  /* margin-top: 0; */
-  width: 100%;
-  /* background-color: blueviolet; */
-}
+/* .bride-groom .foto .background  img{
+  width: 100vw;
+  margin-top: -70px;
+} */
 
-.bride img,
-.groom, img{
-  width: 600px;
-}
+/* .bride-groom .foto img{
+  width: 100vw;
+  z-index: 1;
+} */
+
+
+
 
 .bride{
   float: left;
   margin-top: -20px;
   position: relative;
-  width: 90vw;
+  /* width: 90vw; */
   /* margin-right: 20px; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .groom{
@@ -288,8 +314,8 @@ img{
 
 .space{
   padding-top: 10px;
-  /* -moz-text-stroke: .2px #000;
-  -webkit-text-stroke: .2px #000; */
+  -moz-text-stroke: .2px #000;
+  -webkit-text-stroke: .2px #000;
 }
 
 .playfair{
@@ -321,8 +347,8 @@ img{
   font-family: 'bromello' !important;
   font-size: 200px !important;
   /* font-weight: bolder; */
-  /* -moz-text-stroke: .5px #000;
-  -webkit-text-stroke: .5px #000; */
+  -moz-text-stroke: .5px #000;
+  -webkit-text-stroke: .5px #000;
 }
 
 .bold{
@@ -385,7 +411,7 @@ img{
   visibility: visible;
   opacity: 1;
   transition: 1s;
-  color: #466089;
+  color: black;
   font-size: 40px;
   font-family: 'shafron';
 }
@@ -433,7 +459,7 @@ img{
   color: black;
   font-weight: lighter;
   text-emphasis: center;
-  margin-top: -60px;
+  margin-top: -65px;
 }
 
 .save-the-date .direction a{
@@ -443,10 +469,11 @@ img{
   color: black;
   font-weight: lighter;
   text-align: center;
-  margin-top: 4px;
   border-radius: 20px;
-  padding: 0px 11px;
-  /* background-color: white; */
+  padding: 2px 15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 .save-the-date .relative .block .akad-resepsi{
@@ -469,12 +496,9 @@ img{
   width: 60%;
 }
 
-.save-the-date .realtive .block .akad-resepsi .akad p{
-  font-family: 'Oswald', sans-serif;
-  color: #000;
-}
+.save-the-date .realtive .block .akad-resepsi .akad p,
 .save-the-date .relative .block .akad-resepsi .resepsi p{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'orator';
   color: #000;
 }
 
