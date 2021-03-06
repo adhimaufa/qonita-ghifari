@@ -445,13 +445,15 @@ img{
 }
 
 .akad-resepsi .resepsi img{
-  width: 60%;
+  width: 50%;
 }
 
 .save-the-date .realtive .block .akad-resepsi .akad p,
 .save-the-date .relative .block .akad-resepsi .resepsi p{
   font-family: 'orator';
   color: #000;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .sorry-protokol{
